@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="jdbc.properties"/>
+    <context id="Mysql" targetRuntime="Mybatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.guangl.sso.tk.mybatis.MyMapper"/>
+        </plugin>
+        <!-- 带上序列化接口 -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+
+        <jdbcConnection
+                driverClass="${jdbc.driverClass}"
+                connectionURL="${jdbc.connectionURL}"
+                userId="${jdbc.username}"
+                password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaModelGenerator
+                targetPackage="com.guangl.sso.entity"
+                targetProject="src/main/java">
+        </javaModelGenerator>
+
+        <sqlMapGenerator
+                targetPackage="mapper"
+                targetProject="src/main/resources">
+        </sqlMapGenerator>
+
+        <javaClientGenerator
+                type="XMLMAPPER"
+                targetPackage="com.guangl.sso.dao"
+                targetProject="src/main/java">
+        </javaClientGenerator>
+
+        <!--        <table tableName="user_tmp_table"/>-->
+        <!--        <table tableName="user_tmp_admission"/>-->
+        <table tableName="user_tmp_admission_sub"/>
+        <!--        <table tableName="user_tmp_permission"/>-->
+        <!--        <table tableName="user_tmp_permission_sub"/>-->
+
+    </context>
+</generatorConfiguration>

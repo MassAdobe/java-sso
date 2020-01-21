@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.guangl.sso.dao.UserTmpTableMapper">
+    <resultMap id="BaseResultMap" type="com.guangl.sso.entity.UserTmpTable">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="g_uid" jdbcType="BIGINT" property="gUid"/>
+        <result column="sys_id" jdbcType="BIGINT" property="sysId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="pass_word" jdbcType="VARCHAR" property="passWord"/>
+        <result column="password_salt" jdbcType="VARCHAR" property="passwordSalt"/>
+        <result column="created_tm" jdbcType="TIMESTAMP" property="createdTm"/>
+        <result column="created_by" jdbcType="BIGINT" property="createdBy"/>
+        <result column="updated_tm" jdbcType="TIMESTAMP" property="updatedTm"/>
+        <result column="updated_by" jdbcType="BIGINT" property="updatedBy"/>
+        <result column="is_deleted" jdbcType="TINYINT" property="isDeleted"/>
+        <result column="is_enabled" jdbcType="TINYINT" property="isEnabled"/>
+        <result column="sys_salt" jdbcType="VARCHAR" property="sysSalt"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="phone_num" jdbcType="VARCHAR" property="phoneNum"/>
+        <result column="sex_gender" jdbcType="TINYINT" property="sexGender"/>
+        <result column="prnt_guid" jdbcType="BIGINT" property="prntGuid"/>
+        <result column="expire_dt" jdbcType="DATE" property="expireDt"/>
+    </resultMap>
+</mapper>

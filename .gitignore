@@ -1,0 +1,23 @@
+
+\.idea/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+*.iml
+### IntelliJ IDEA ###
+rebel.xml
+.idea/
+### MAC ###
+.DS_Store
+### Other ###
+logs/
+temp/
+target/
+LOG_HOME_IS_UNDEFINED/
+sso-sys.iml
+sso-sys-spring/sso-sys-spring.iml
+sso-sys-common/sso-sys-common.iml

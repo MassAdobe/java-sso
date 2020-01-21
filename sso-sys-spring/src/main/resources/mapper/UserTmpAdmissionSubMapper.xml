@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.guangl.sso.dao.UserTmpAdmissionSubMapper">
+    <resultMap id="BaseResultMap" type="com.guangl.sso.entity.UserTmpAdmissionSub">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="sub_admission_id" jdbcType="BIGINT" property="subAdmissionId"/>
+        <result column="function_id" jdbcType="BIGINT" property="functionId"/>
+        <result column="created_by" jdbcType="BIGINT" property="createdBy"/>
+        <result column="updated_by" jdbcType="BIGINT" property="updatedBy"/>
+        <result column="created_tm" jdbcType="TIMESTAMP" property="createdTm"/>
+        <result column="updated_tm" jdbcType="TIMESTAMP" property="updatedTm"/>
+        <result column="is_enabled" jdbcType="TINYINT" property="isEnabled"/>
+        <result column="is_deleted" jdbcType="TINYINT" property="isDeleted"/>
+        <result column="admission_name" jdbcType="VARCHAR" property="admissionName"/>
+        <result column="admission_id" jdbcType="BIGINT" property="admissionId"/>
+    </resultMap>
+</mapper>

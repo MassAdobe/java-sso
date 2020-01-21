@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.guangl.sso.dao.UserTmpPermissionSubMapper">
+    <resultMap id="BaseResultMap" type="com.guangl.sso.entity.UserTmpPermissionSub">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="sub_permission_id" jdbcType="BIGINT" property="subPermissionId"/>
+        <result column="permission_name" jdbcType="VARCHAR" property="permissionName"/>
+        <result column="function_id" jdbcType="BIGINT" property="functionId"/>
+        <result column="created_by" jdbcType="BIGINT" property="createdBy"/>
+        <result column="updated_by" jdbcType="BIGINT" property="updatedBy"/>
+        <result column="created_tm" jdbcType="TIMESTAMP" property="createdTm"/>
+        <result column="updated_tm" jdbcType="TIMESTAMP" property="updatedTm"/>
+        <result column="is_deleted" jdbcType="TINYINT" property="isDeleted"/>
+        <result column="is_enabled" jdbcType="TINYINT" property="isEnabled"/>
+        <result column="permission_id" jdbcType="BIGINT" property="permissionId"/>
+    </resultMap>
+</mapper>
